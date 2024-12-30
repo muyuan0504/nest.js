@@ -16,6 +16,16 @@
         "noImplicitAny": false,
         "strictBindCallApply": false,
         "forceConsistentCasingInFileNames": false,
-        "noFallthroughCasesInSwitch": false
-    }
+        "noFallthroughCasesInSwitch": false,
+        /** typeRoots: 指定 TypeScript 查找类型定义文件的根目录 */
+        "typeRoots": [
+            "./types",
+            "./node_modules/@types"
+        ]
+    },
+    "include": [
+        "./types/*.d.ts",
+        "./types/*.ts",
+        "./**/*.ts"
+    ]
 }
